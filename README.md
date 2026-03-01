@@ -1,12 +1,12 @@
-# @qubit-ltd/common-validation-rule
+# @qubit-ltd/validation-rule
 
-[![npm package](https://img.shields.io/npm/v/@qubit-ltd/common-validation-rule.svg)](https://npmjs.com/package/@qubit-ltd/common-validation-rule)
+[![npm package](https://img.shields.io/npm/v/@qubit-ltd/validation-rule.svg)](https://npmjs.com/package/@qubit-ltd/validation-rule)
 [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![中文文档](https://img.shields.io/badge/文档-中文版-blue.svg)](README.zh_CN.md)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/qubit-ltd/js-validation-rule/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/qubit-ltd/js-validation-rule/tree/master)
 [![Coverage Status](https://coveralls.io/repos/github/qubit-ltd/js-validation-rule/badge.svg?branch=master)](https://coveralls.io/github/qubit-ltd/js-validation-rule?branch=master)
 
-[@qubit-ltd/common-validation-rule] is a JavaScript ES6 library of common validation rules.
+[@qubit-ltd/validation-rule] is a JavaScript ES6 library of common validation rules.
 
 ## <span id="table-of-contents">Table of Contents</span>
 
@@ -21,13 +21,13 @@
 Install with npm:
 
 ```bash
-npm install @qubit-ltd/common-validation-rule
+npm install @qubit-ltd/validation-rule
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @qubit-ltd/common-validation-rule
+yarn add @qubit-ltd/validation-rule
 ```
 
 ## <span id="usage">Usage</span>
@@ -36,7 +36,7 @@ yarn add @qubit-ltd/common-validation-rule
 
 ```javascript
 // Import specific validation rules
-import { EmailRule, PasswordRule, UsernameRule } from '@qubit-ltd/common-validation-rule';
+import { EmailRule, PasswordRule, UsernameRule } from '@qubit-ltd/validation-rule';
 
 // Validate an email address
 const isValidEmail = EmailRule.isValid('example@example.com'); // returns true
@@ -51,7 +51,7 @@ const isValidUsername = UsernameRule.isValid('user123'); // returns true or fals
 ### Using ValidationResult
 
 ```javascript
-import { ValidationResult } from '@qubit-ltd/common-validation-rule';
+import { ValidationResult } from '@qubit-ltd/validation-rule';
 
 // Create validation results
 const validResult = new ValidationResult(true, 'Validation succeeded');
@@ -119,8 +119,8 @@ to open an issue or submit a pull request to the [GitHub repository].
 
 ## <span id="license">License</span>
 
-[@qubit-ltd/common-validation-rule] is distributed under the Apache 2.0 license.
+[@qubit-ltd/validation-rule] is distributed under the Apache 2.0 license.
 See the [LICENSE](LICENSE) file for more details.
 
-[@qubit-ltd/common-validation-rule]: https://npmjs.com/package/@qubit-ltd/common-validation-rule
+[@qubit-ltd/validation-rule]: https://npmjs.com/package/@qubit-ltd/validation-rule
 [GitHub repository]: https://github.com/qubit-ltd/js-validation-rule

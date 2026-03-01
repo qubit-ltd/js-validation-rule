@@ -3,8 +3,8 @@
 [![npm package](https://img.shields.io/npm/v/@qubit-ltd/common-validation-rule.svg)](https://npmjs.com/package/@qubit-ltd/common-validation-rule)
 [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![English Document](https://img.shields.io/badge/Document-English-blue.svg)](README.md)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Haixing-Hu/js-common-validation-rule/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Haixing-Hu/js-common-validation-rule/tree/master)
-[![Coverage Status](https://coveralls.io/repos/github/Haixing-Hu/js-common-validation-rule/badge.svg?branch=master)](https://coveralls.io/github/Haixing-Hu/js-common-validation-rule?branch=master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/qubit-ltd/js-validation-rule/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/qubit-ltd/js-validation-rule/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/qubit-ltd/js-validation-rule/badge.svg?branch=master)](https://coveralls.io/github/qubit-ltd/js-validation-rule?branch=master)
 
 [@qubit-ltd/common-validation-rule] 是一个提供常用验证规则的JavaScript ES6库。
 
@@ -122,4 +122,4 @@ const mergedResult = ValidationResult.merge(results);
 详情请参阅[LICENSE](LICENSE)文件。
 
 [@qubit-ltd/common-validation-rule]: https://npmjs.com/package/@qubit-ltd/common-validation-rule
-[GitHub仓库]: https://github.com/Haixing-Hu/js-common-validation-rule 
+[GitHub仓库]: https://github.com/qubit-ltd/js-validation-rule 

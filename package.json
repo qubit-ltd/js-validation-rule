@@ -16,12 +16,12 @@
     "JavaScript",
     "validation"
   ],
-  "main": "dist/common-validation-rule.min.cjs",
-  "module": "dist/common-validation-rule.min.mjs",
+  "main": "dist/validation-rule.min.cjs",
+  "module": "dist/validation-rule.min.mjs",
   "exports": {
     ".": {
-      "require": "./dist/common-validation-rule.min.cjs",
-      "import": "./dist/common-validation-rule.min.mjs"
+      "require": "./dist/validation-rule.min.cjs",
+      "import": "./dist/validation-rule.min.mjs"
     }
   },
   "sideEffects": false,

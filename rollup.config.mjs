@@ -8,4 +8,4 @@
 ////////////////////////////////////////////////////////////////////////////////
 import rollupBuilder from '@qubit-ltd/rollup-builder';
 
-export default rollupBuilder('CommonValidationRule', import.meta.url);
+export default rollupBuilder('ValidationRule', import.meta.url);

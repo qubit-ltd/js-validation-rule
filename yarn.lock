@@ -2234,7 +2234,6 @@ __metadata:
     jest-environment-jsdom-global: "npm:^4.0.0"
     jest-extended: "npm:^6.0.0"
     jsdoc: "npm:^4.0.4"
-    node-uri: "npm:^1.1.2"
     rollup: "npm:^4.53.3"
     rollup-plugin-analyzer: "npm:^4.0.0"
     rollup-plugin-visualizer: "npm:^6.0.5"
@@ -7076,13 +7075,6 @@ __metadata:
   version: 2.0.27
   resolution: "node-releases@npm:2.0.27"
   checksum: 10c0/f1e6583b7833ea81880627748d28a3a7ff5703d5409328c216ae57befbced10ce2c991bea86434e8ec39003bd017f70481e2e5f8c1f7e0a7663241f81d6e00e2
-  languageName: node
-  linkType: hard
-
-"node-uri@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "node-uri@npm:1.1.2"
-  checksum: 10c0/1d14b2bb5513125e8ef454b4a81245608ba306a03a103befb27cb669bbb9f68e89638cb608f23eefa6c1dfe6dec9e7babfeea2825c8d75af6edee9d254167dc4
   languageName: node
   linkType: hard
 

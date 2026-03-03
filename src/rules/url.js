@@ -6,7 +6,6 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import uri from 'node-uri';
 import { isString } from '@qubit-ltd/type-detect';
 
 /**
@@ -29,18 +28,38 @@ const UrlRule = {
    * @author 胡海星
    */
   isValid(url) {
-    if (isString(url)) {
-      const u = url.trim();
-      if (u.length === 0) {
+    if (!isString(url)) {
+      return false;
+    }
+    const u = url.trim();
+    if ((u.length === 0) || (u.length > 2048)) {
+      return false;
+    }
+    if (/[^\u0020-\u007E]/.test(u)) {
+      return false;
+    }
+    if (!/^https?:\/\//i.test(u)) {
+      return false;
+    }
+    if (/^https?:\/\/\/+/i.test(u)) {
+      return false;
+    }
+    if (/%(?![0-9A-Fa-f]{2})/.test(u)) {
+      return false;
+    }
+    if ((u.match(/#/g) || []).length > 1) {
+      return false;
+    }
+    if (typeof globalThis.URL !== 'function') {
+      return false;
+    }
+    try {
+      const parsed = new globalThis.URL(u);
+      if ((parsed.protocol !== 'http:') && (parsed.protocol !== 'https:')) {
         return false;
       }
-      try {
-        uri.checkWebURL(u);
-        return true;
-      } catch {
-        return false;
-      }
-    } else {
+      return parsed.hostname.length > 0;
+    } catch {
       return false;
     }
   },

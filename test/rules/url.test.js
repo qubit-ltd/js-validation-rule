@@ -58,8 +58,8 @@ describe('UrlRule.isValid()', () => {
     const str = 'http://bar.com/over/there?quêry=5';
     expect(UrlRule.isValid(str)).toBe(false);
   });
-  test('http://bar.com/over/there?quêry=5', () => {
-    const str = 'http://bar.com/over/there?quêry=5';
+  test('http://bar.com/over/there?query=quêry', () => {
+    const str = 'http://bar.com/over/there?query=quêry';
     expect(UrlRule.isValid(str)).toBe(false);
   });
   test('http://bar.com/over/there?query=5#anch#r', () => {
@@ -98,5 +98,17 @@ describe('UrlRule.isValid()', () => {
   test('valid url with leading and trailing spaces', () => {
     const str = '  http://www.bar.com/foo ';
     expect(UrlRule.isValid(str)).toBe(true);
+  });
+  test('HTTP protocol in uppercase', () => {
+    const str = 'HTTP://www.bar.com/foo';
+    expect(UrlRule.isValid(str)).toBe(true);
+  });
+  test('invalid escaped percent', () => {
+    const str = 'http://www.bar.com/foo%zz';
+    expect(UrlRule.isValid(str)).toBe(false);
+  });
+  test('url without host', () => {
+    const str = 'http://';
+    expect(UrlRule.isValid(str)).toBe(false);
   });
 });
